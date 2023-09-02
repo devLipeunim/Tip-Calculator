@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tip calculator</title>
+</head>
+
+<body>
+    
+    <section class="section">
+        <div class="first_content">
+            <h1>S&nbsp;P&nbsp;L&nbsp;I</h1>
+            <h1>T&nbsp;T&nbsp;E&nbsp;R</h1>
+        </div>
+        <div class="wrapper">
+            <div class="first-flex">
+                <div class="y_flex">
+                    <div class="value">
+                        <label>Bill</label>
+                        <div class="icon_dvv">
+                            <input type="text" id="bill__input">
+                            <img src="./icon-dollar.svg" class="icon_dv" alt="">
+                        </div>
+                    </div>
+                    <div class="select__tip">
+                        <h3>Select Tip %</h3>
+                        <div class="percentage">
+                            <div class="tip">
+                                <div onclick="calculateTip(5)">
+                                    <p>5%</p>
+                                </div>
+                                <div onclick="calculateTip(10)">
+                                    <p>10%</p>
+                                </div>
+                                <div onclick="calculateTip(15)">
+                                    <p>15%</p>
+                                </div>
+                                <div onclick="calculateTip(25)">
+                                    <p>25%</p>
+                                </div>
+                                <div onclick="calculateTip(50)">
+                                    <p>50%</p>
+                                </div>
+                                <input type="text" placeholder="Custom" id="customInput">
+                            </div>
+                        </div>
+                        <div class="valuee">
+                            <label>Number of people</label>
+                            <div class="icon_dvvv">
+                                <input type="text" id="bill__inputt">
+                                <img src="./icon-person.svg" class="icon_dvw" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <div class="content_cointain">
+                        <div class="main_content">
+                            <div class="first_conain">
+                                <div class="tip__amount">
+                                    <h3>Tip Amount</h3>
+                                    <h5>/ person</h5>
+                                </div>
+                                <div class="amnt">
+                                    <h6 >$<span id="amunt">0.00</span></h6>
+                                </div>
+                            </div>
+
+                            <div class="first_conaint">
+                                <div class="tip__amount">
+                                    <h3>Total</h3>
+                                    <h5>/ person</h5>
+                                </div>
+                                <div class="amnt">
+                                    <h6 >$<span id="amuntt">0.00</span></h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="second__btn">
+                            <button onclick="reset()">RESET</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./tip.js"></script>
+</body>
+
+</html>
